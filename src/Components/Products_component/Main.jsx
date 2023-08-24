@@ -10,8 +10,8 @@ export default function Main() {
     <div className={Styles.Main_div}>
 
 
-{Data_ProductList.map(e=>{
- return <Products_list_render title={e.title} price={e.price} imageLink={e.imageUrl}/>
+{Data_ProductList.map((e,n)=>{
+ return <Products_list_render id={n} title={e.title} price={e.price} imageLink={e.imageUrl}/>
 
 
 })}

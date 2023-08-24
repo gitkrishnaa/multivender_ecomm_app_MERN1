@@ -32,14 +32,16 @@ margin-top: 30px;
 display: flex;
 justify-content: center;
 /* align-items: center; */
+/* background-color: aquamarine; */
   }
+
 .nav_buttons{
     display: flex;  
     justify-content: center;
     align-items: end;
-    width: 50px;
+    width: 75px;
     color: blueviolet;
-    font-size: 22px;
+    font-size: 25px;
     margin: 0px 10px ;
 }
 .nav_buttons>div{
@@ -58,10 +60,16 @@ justify-content: center;
 .search_input{
 background-color: rgba(238, 238, 238, 0.823);
 border: none;
-height: 23px;
-width: 135px;
+height: 33px;
+width: 155px;
 border-radius: 5px;
 text-align: center;
 font-size: 15px;
 
+}
+.Cart_btn{
+/* background-color: rgb(105, 129, 121); */
+display: flex;
+justify-content: center;
+align-items: center;
 }
