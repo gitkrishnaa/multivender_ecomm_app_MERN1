@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { Header } from './Container';
+import { Header,Body,Footer } from './Container';
 import { Products_component } from './Components';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
    
    <div className="main">
 <Header/>
-<Products_component/>
+<Body/>
 
 
 

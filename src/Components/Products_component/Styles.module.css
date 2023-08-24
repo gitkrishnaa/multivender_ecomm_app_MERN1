@@ -1,0 +1,8 @@
+.Main_div{
+    background-color: azure;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    transition: 0.5s;
+}

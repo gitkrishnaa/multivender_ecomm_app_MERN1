@@ -1,18 +1,12 @@
 import React from 'react'
-import { Products_component } from '../../Components'
-
+import { Navbar,Sliders } from '../../Components'
 
 function Main() {
   return (
     <div style={{width:"100&"}}>
-    <Products_component/>
-
-
-
-
-
-
-
+      <Navbar/>
+    
+    <Sliders/>
     </div>
    
   )
