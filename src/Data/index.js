@@ -1,0 +1,1 @@
+export {default as Data_ProductList} from "./product.json"

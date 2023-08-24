@@ -1,0 +1,1 @@
+export {default as sliderImg1} from "./Slider_Images/img2.jpg"
