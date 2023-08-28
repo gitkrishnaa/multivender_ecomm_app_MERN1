@@ -14,7 +14,7 @@ function Context_provider(props) {
       } else {
         x[`${action.value}`] = x[`${action.value}`] + 1;
       }
-      alert(x[`${action.value}`]);
+      // alert(x[`${action.value}`]);
       return x;
     }
     if (action.type == ACTIONS.DECREASE) {
@@ -55,7 +55,7 @@ function Context_provider(props) {
   };
 
   return (
-    <CreateContext.Provider value={{ addtocart, details, state }}>
+    <CreateContext.Provider value={{ addtocart, details, data:state }}>
       {props.children}
     </CreateContext.Provider>
   );

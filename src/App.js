@@ -3,11 +3,19 @@ import './App.css';
 import { Header,Body,Footer } from './Container';
 import { Cart_window, Products_component } from './Components';
 import { useState } from 'react';
-import {Context_provider} from './Context/cart/Context_provider';
+import CartContextProvider from "./Context/cart/Context_provider";
+import {createBrowserRouter,RouterProvider} from "react-router-dom"
+import {Home,About } from './Pages';
 
 function App() {
-  const [modal,setModal]=useState(false)
+const router1=createBrowserRouter([
+  {path:"/", element:<Home />},
+  {path:"/About", element:<About />},
+])
 
+
+
+const [modal,setModal]=useState(false)
 const closeModal_cart_handler=()=>{
 setModal(false)
 }
@@ -15,16 +23,20 @@ const openModal_cart_handler=()=>{
   setModal(true)
   }
 
-  return (
 
-   <div className="main">
-<Header onclick_open_cart_window={openModal_cart_handler}/>
-<Body />
 
-{modal?<Cart_window onCloseHandler={closeModal_cart_handler}/>:console.log("popup is closed")}
+  return <RouterProvider router={router1}/>
+//   return (
+//    <CartContextProvider>
+//    <div className="main">
+// <Header onclick_open_cart_window={openModal_cart_handler}/>
+// <Body />
 
-   </div>
-  );
+// {modal?<Cart_window onCloseHandler={closeModal_cart_handler}/>:console.log("popup is closed")}
+
+//    </div>
+//    </CartContextProvider>
+//   );
 }
 
 export default App;

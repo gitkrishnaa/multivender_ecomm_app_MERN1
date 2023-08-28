@@ -4,7 +4,7 @@ import CartContext from "../../Context/cart/Context_provider"
 
 function Main(props) {
   return (
-    <CartContext>
+   
     <div style={{width:"100&"}}>
     <Products_component />
 
@@ -15,7 +15,7 @@ function Main(props) {
 
 
     </div>
-    </CartContext>
+    
   )
 }
 

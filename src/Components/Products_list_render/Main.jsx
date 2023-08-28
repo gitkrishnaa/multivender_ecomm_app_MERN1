@@ -4,8 +4,8 @@ import { Data_ProductList } from '../../Data'
 import { AiOutlineHeart } from 'react-icons/ai'
 import {CartContextCreate} from "../../Context/index";
 export default function Main(props) {
-let context=useContext(CartContextCreate)
-// console.log(context,"jhbjh")
+let context=useContext(CartContextCreate);
+// console.log(context,CartContextCreate,"jhbjh")
 const addToCart_click_handler=(e)=>{
   context.addtocart(e.target.id)
 }

@@ -6,9 +6,10 @@
     background-color: rgba(171, 172, 172, 0.386);
     top: 0px;
     left: 0px;
-
+    transition: 0.5s ease-in-out;
 }
 .window1{
+    transition: 0.5s ease-in-out;
     background-color: rgb(255, 255, 255);
     width: 50%;
     height: 50%;
